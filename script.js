@@ -37,9 +37,11 @@ document.querySelector(".roll-dice").addEventListener("click",function(){
 function changePlayer()
 {
     score[activePlayer]+=cscore;
+    console.log(score[activePlayer]);
+    console.log(target);
     if(score[activePlayer]<target){
         document.querySelector(".score-"+activePlayer).textContent=score[activePlayer];
-        cscore=0; 
+        cscore=0;
         c1.textContent="0";
         c2.textContent="0";
         activePlayer=activePlayer===0?1:0;
@@ -66,7 +68,8 @@ document.querySelector(".hold").addEventListener("click",function(){
 document.querySelector(".new-game").addEventListener("click",init);
 function init()
 {
-    prev=0
+    prev=0;
+    target=1;
     gameover=false;
     score=[0,0];
     activePlayer=0;
