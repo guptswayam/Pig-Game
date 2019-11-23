@@ -55,18 +55,13 @@ h2 {
   margin-top: 150px;
   font-size: 20px; }
 
-p[class^="score-"] {
-  font-size: 80px;
-  color: #bc3d3d; }
-
 .new-game {
   position: absolute;
   top: 5%;
   left: 50%;
-  transform: translate(-50%); }
-  .new-game a {
-    color: black;
-    text-decoration: none; }
+  transform: translate(-50%);
+  border: none;
+  background: none; }
   .new-game i {
     color: #f02121;
     vertical-align: middle; }
@@ -76,42 +71,47 @@ p[class^="score-"] {
     margin-left: 15px; }
   .new-game:hover {
     transform: translate(-50%) scale(1.1);
-    transition: 0.2s ease-in-out; }
+    transition: 0.3s ease-in-out; }
+  .new-game:focus {
+    outline: none; }
 
 .roll {
   position: absolute;
   top: 65%;
   left: 42%;
-  max-width: 26%; }
-  .roll a {
-    color: black;
-    text-decoration: none; }
+  max-width: 26%;
+  border: none;
+  background: none; }
   .roll i {
     color: #f02121;
-    background-color: none;
-    font-size: 40px;
     vertical-align: middle; }
   .roll span {
     vertical-align: middle;
     font-size: 20px;
     margin-left: 15px; }
+  .roll:focus {
+    outline: none; }
 
 .hold {
   position: absolute;
   top: 75%;
   left: 45%;
-  max-width: 20%; }
-  .hold a {
-    color: black;
-    text-decoration: none; }
+  max-width: 20%;
+  border: none;
+  background: none; }
   .hold i {
     color: #f02121;
-    background-color: none;
     vertical-align: middle; }
   .hold span {
     vertical-align: middle;
     font-size: 20px;
     margin-left: 15px; }
+  .hold:focus {
+    outline: none; }
+
+p[class^="score-"] {
+  font-size: 80px;
+  color: #bc3d3d; }
 
 p.game-rules a {
   position: absolute;
