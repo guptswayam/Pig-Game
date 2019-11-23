@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pig Game</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Public+Sans:100,200,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container1 active">
+                <h2 id="player-0">PLAYER 1</h2>
+                <h2 class="current"> *</h2>
+                <p class="score-0">43</p>
+                <button class="btn-primary">CURRENT<br><span style="color: white;; font-size: 30px; line-height: 1.5" id="cscore-0">11</span></button>
+            </div>
+            <div class="container2">
+                <h2 id=player-1>PLAYER 2</h2>
+                <h2 class="current"> *</h2>
+                <p class="score-1">72</p>
+                <button class="btn-primary">CURRENT<br><span style="color: white; font-size: 30px; line-height: 1.5" id="cscore-1">0</span></button>
+            </div>
+            <p class="new-game"><a href="javascript:void(0)"><i class="fa fa-plus-circle fa-2x"></i><span>NEW GAME</span></a></p>
+            <img src="Assets/dice-5.png" class="dice-img">
+            <p class="roll roll-dice"><a href="javascript:void(0)"><i class="ion-ios-loop"></i><span>ROLL DICE</span></a></p>
+            <p class="hold"><a href="javascript:void(0)"><i class="ion-ios-download-outline"></i><span>HOLD</span></a></p>
+            <form>
+                <input class="winning-score" placeholder="Winning Score">
+            </form>
+            <p class="game-rules"><a href="#">#Game Rules</a></p>
+        </div>  
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
